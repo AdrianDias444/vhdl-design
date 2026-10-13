@@ -50,3 +50,13 @@ void loop() {
   delay(500);
 
 }
+
+
+
+// AND	->  &&
+// OR   ->  ||
+// NOT	->  !
+// XOR	->  ^             ->  (a && !b) || (!a && b)
+// XNOR	->  !(a ^ b)      ->  (a && b) || (!a && !b)
+// NAND	->  !(a && b)
+// NOR	->  !(a || b)
