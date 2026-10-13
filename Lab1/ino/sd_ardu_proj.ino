@@ -36,7 +36,7 @@ void loop() {
   a3 = digitalRead(A3);
   f_in = digitalRead(F_IN);
 
-  f_out = (a0 && !a1) || (a0 && a3 && !a2); //(A0 AND ~A1) OR (A0 AND A3 AND ~A2)
+  f_out = (a0) && (!a1 || !a2 && a3); // Home circuit
 
   valid = f_in == f_out;
 
